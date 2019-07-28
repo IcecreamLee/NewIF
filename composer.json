@@ -1,0 +1,53 @@
+{
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "App\\Controller\\": "app/controller/",
+            "App\\Core\\": "app/core/",
+            "App\\Lib\\": "app/lib/",
+            "App\\Logic\\": "app/logic/",
+            "App\\Model\\": "app/model/",
+            "Framework\\": "framework/",
+            "Framework\\Core\\": "framework/core/",
+            "Framework\\Database\\": "framework/database/",
+            "Framework\\Handler\\": "framework/handler/",
+            "Framework\\Validation\\": "framework/validation/",
+            "Wechat\\": "app/lib/Wechat/"
+        },
+        "classmap": [
+            "framework/sys/",
+            "app/core/Cls/",
+            "app/helper/"
+        ],
+        "files": [
+            "framework/helper/core.php"
+        ]
+    },
+    "require": {
+        "ext-gd": "*",
+        "ext-ftp": "*",
+        "ext-pdo": "*",
+        "ext-curl": "*",
+        "ext-exif": "*",
+        "ext-json": "*",
+        "ext-soap": "*",
+        "ext-redis": "*",
+        "ext-bcmath": "*",
+        "ext-mcrypt": "*",
+        "ext-libxml": "*",
+        "ext-openssl": "*",
+        "ext-fileinfo": "*",
+        "ext-memcache": "*",
+        "ext-mbstring": "*",
+        "ext-simplexml": "*",
+        "qiniu/php-sdk": "^7.2",
+        "overtrue/pinyin": "~4.0",
+        "respect/validation": "^1.1"
+    }
+}
